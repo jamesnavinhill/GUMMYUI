@@ -1,4 +1,4 @@
-# BlackBox UI Library 🎨
+# Gummy Style UI Library 🎨
 
 A beautiful, gummy UI component library extracted from BlackBox featuring gorgeous themes, warm color schemes, and that perfect "gummy" aesthetic.
 
