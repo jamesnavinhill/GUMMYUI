@@ -141,8 +141,8 @@ body.bg-solid {
 
 /* Dark mode solid background override */
 html.dark body.bg-solid {
-  --page-bg: #0b0907;
-  background-color: #0b0907 !important;
+  --page-bg: #0f1517;
+  background-color: #0f1517 !important;
 }
 
 /* Dark mode backgrounds - Softer and warmer */

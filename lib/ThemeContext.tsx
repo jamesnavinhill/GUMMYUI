@@ -134,10 +134,10 @@ const STORAGE_KEYS = {
 } as const;
 
 const DEFAULT_SETTINGS = {
-  colorScheme: "berry" as ColorScheme,
-  background: "gradientSky" as BackgroundOption,
+  colorScheme: "honey" as ColorScheme,
+  background: "gradientHoney" as BackgroundOption,
   font: "sans" as FontOption,
-  mode: "dark" as ThemeMode,
+  mode: "light" as ThemeMode,
 } as const;
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
