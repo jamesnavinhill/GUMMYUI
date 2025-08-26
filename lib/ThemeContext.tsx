@@ -135,8 +135,8 @@ const STORAGE_KEYS = {
 
 const DEFAULT_SETTINGS = {
   colorScheme: "berry" as ColorScheme,
-  background: "solid" as BackgroundOption,
-  font: "mono" as FontOption,
+  background: "gradientSky" as BackgroundOption,
+  font: "sans" as FontOption,
   mode: "dark" as ThemeMode,
 } as const;
 
