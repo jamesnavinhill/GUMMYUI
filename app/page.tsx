@@ -23,7 +23,14 @@ export default function UIDemo() {
                   Beautiful gummy UI components with gorgeous themes
                 </p>
               </div>
-              <div className="status-dot animate-pulse-accent"></div>
+              <div className="flex items-center gap-2">
+                <div className="w-3 h-3 accent-color-honey rounded-full"></div>
+                <div className="w-3 h-3 accent-color-berry rounded-full"></div>
+                <div className="w-3 h-3 accent-color-sage rounded-full"></div>
+                <div className="w-3 h-3 accent-color-sky rounded-full"></div>
+                <div className="w-3 h-3 accent-color-lavender rounded-full"></div>
+                <div className="w-3 h-3 accent-color-monochrome rounded-full"></div>
+              </div>
             </div>
           </header>
 
@@ -44,96 +51,61 @@ export default function UIDemo() {
                   <ThemeSettings />
                 </div>
 
-                {/* Color Swatches and Typography */}
-                <div className="space-y-6">
-                  <div className="gummy-panel p-6">
-                    <h3 className="text-sm font-medium text-foreground mb-4">
-                      Color Palette
+                {/* Typography Showcase - Expanded */}
+                <div className="gummy-panel p-6 flex flex-col justify-between h-full">
+                  <div className="space-y-3">
+                    <h3 className="text-base font-medium accent-text">
+                      Text Styles
                     </h3>
-                    <div className="grid grid-cols-3 gap-3">
-                      <div className="space-y-2">
-                        <div className="accent-color-honey w-full h-8 rounded"></div>
-                        <div className="text-xs text-center text-muted-foreground">
-                          Honey
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="accent-color-berry w-full h-8 rounded"></div>
-                        <div className="text-xs text-center text-muted-foreground">
-                          Berry
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="accent-color-sage w-full h-8 rounded"></div>
-                        <div className="text-xs text-center text-muted-foreground">
-                          Sage
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="accent-color-sky w-full h-8 rounded"></div>
-                        <div className="text-xs text-center text-muted-foreground">
-                          Sky
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="accent-color-lavender w-full h-8 rounded"></div>
-                        <div className="text-xs text-center text-muted-foreground">
-                          Lavender
-                        </div>
-                      </div>
-                      <div className="space-y-2">
-                        <div className="accent-color-monochrome w-full h-8 rounded"></div>
-                        <div className="text-xs text-center text-muted-foreground">
-                          Mono
-                        </div>
-                      </div>
+                    <p className="text-foreground">
+                      This is regular body text in the beautiful monospace font
+                      family.
+                    </p>
+                    <p className="text-muted-foreground text-sm">
+                      This is muted text for secondary information.
+                    </p>
+                    <p className="accent-text text-sm">
+                      This is accent text that matches your current theme.
+                    </p>
+                  </div>
+
+                  <div>
+                    <h3 className="text-base font-medium accent-text mb-4">
+                      Heading Hierarchy
+                    </h3>
+                    <div className="space-y-3">
+                      <h1 className="text-2xl font-semibold text-foreground">
+                        Heading 1
+                      </h1>
+                      <h2 className="text-xl font-semibold text-foreground">
+                        Heading 2
+                      </h2>
+                      <h3 className="text-lg font-medium text-foreground">
+                        Heading 3
+                      </h3>
+                      <h4 className="text-base font-medium text-foreground">
+                        Heading 4
+                      </h4>
                     </div>
                   </div>
 
-                  {/* Typography Showcase */}
-                  <div className="gummy-panel p-6 space-y-6">
-                    <div>
-                      <h3 className="text-base font-medium accent-text mb-4">
-                        Heading Hierarchy
-                      </h3>
-                      <div className="space-y-3">
-                        <h1 className="text-2xl font-semibold text-foreground">
-                          Heading 1
-                        </h1>
-                        <h2 className="text-xl font-semibold text-foreground">
-                          Heading 2
-                        </h2>
-                        <h3 className="text-lg font-medium text-foreground">
-                          Heading 3
-                        </h3>
-                        <h4 className="text-base font-medium text-foreground">
-                          Heading 4
-                        </h4>
-                      </div>
-                    </div>
-
+                  <div className="space-y-4">
+                    <h3 className="text-base font-medium accent-text mb-3">
+                      Code Display
+                    </h3>
                     <div className="space-y-3">
-                      <h3 className="text-base font-medium accent-text">
-                        Text Styles
-                      </h3>
-                      <p className="text-foreground">
-                        This is regular body text in the beautiful monospace
-                        font family.
-                      </p>
-                      <p className="text-muted-foreground text-sm">
-                        This is muted text for secondary information.
-                      </p>
-                      <p className="accent-text text-sm">
-                        This is accent text that matches your current theme.
-                      </p>
-                    </div>
-
-                    <div>
-                      <h3 className="text-base font-medium accent-text mb-3">
-                        Code Display
-                      </h3>
-                      <code className="bg-muted px-2 py-1 rounded text-sm">
+                      <code className="bg-muted px-2 py-1 rounded text-sm block">
                         const beautiful = &quot;gummy ui&quot;;
+                      </code>
+                      <code className="bg-muted px-2 py-1 rounded text-sm block">
+                        import &#123; ThemeProvider &#125; from
+                        &quot;./theme&quot;;
+                      </code>
+                      <code className="bg-muted px-2 py-1 rounded text-sm block">
+                        &lt;button className=&quot;gummy-button-accent&quot;&gt;
+                      </code>
+                      <code className="bg-muted px-2 py-1 rounded text-sm block">
+                        background: var(--accent-primary);
                       </code>
                     </div>
                   </div>
