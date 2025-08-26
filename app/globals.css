@@ -141,24 +141,24 @@ body.bg-solid {
 
 /* Dark mode solid background override */
 html.dark body.bg-solid {
-  --page-bg: #221e19;
-  background-color: #221e19 !important;
+  --page-bg: #0b0907;
+  background-color: #0b0907 !important;
 }
 
 /* Dark mode backgrounds - Softer and warmer */
 html.dark body.bg-gradient-honey {
-  --page-bg: #2d2318;
-  background-color: #2d2318 !important;
+  --page-bg: #1a140f;
+  background-color: #181410 !important;
 }
 
 html.dark body.bg-gradient-berry {
-  --page-bg: #2d1f1f;
-  background-color: #2d1f1f !important;
+  --page-bg: #2c1c1c;
+  background-color: #2c1c1c !important;
 }
 
 html.dark body.bg-gradient-sage {
-  --page-bg: #202d20;
-  background-color: #202d20 !important;
+  --page-bg: #283528;
+  background-color: #283528 !important;
 }
 
 html.dark body.bg-gradient-sky {
@@ -167,13 +167,13 @@ html.dark body.bg-gradient-sky {
 }
 
 html.dark body.bg-gradient-lavender {
-  --page-bg: #261d2d;
-  background-color: #261d2d !important;
+  --page-bg: #2a1f32;
+  background-color: #2a1f32 !important;
 }
 
 html.dark body.bg-gradient-monochrome {
-  --page-bg: #252525;
-  background-color: #252525 !important;
+  --page-bg: #1e1e1e;
+  background-color: #1e1e1e !important;
 }
 
 /* Light mode backgrounds - Slightly darker for more presence */
