@@ -606,3 +606,19 @@ select option {
 .animate-gentle-bounce {
   animation: gentle-fade 2s ease-in-out infinite;
 }
+
+/* Fix dark theme text color */
+body {
+  color: #ffffff !important;
+}
+
+.light body {
+  color: #2c2721 !important;
+}
+
+/* Hide sidebar on mobile screens */
+@media (max-width: 768px) {
+  .sidebar-mobile-hidden {
+    display: none !important;
+  }
+}

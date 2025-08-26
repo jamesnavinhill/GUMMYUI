@@ -22,7 +22,7 @@ export default function Sidebar({ children }: SidebarProps) {
 
   return (
     <div
-      className={`h-screen gummy-panel-strong sidebar-no-shadow border-r border-white/20 flex flex-col transition-all duration-300 flex-shrink-0 ${
+      className={`h-screen gummy-panel-strong sidebar-no-shadow sidebar-mobile-hidden border-r border-white/20 flex flex-col transition-all duration-300 flex-shrink-0 ${
         isCollapsed ? "w-12" : "w-80"
       }`}
     >
